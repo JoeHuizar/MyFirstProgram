@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Application</title>
+        <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            width: 100vw;
+            height: 100vw;
+            background-color :#ccc;
+        }
+        .app-container-grid {
+            display: grid;
+            grid-template-columns: 1fr 6fr 2fr;
+            grid-template-rows: 1fr 7fr 1fr;
+            height: 100vh;
+        }
+        .main-header, .main-footer {
+            background-color: #696868;
+        }
+        .main-header, .main-container-grid, .main-footer {
+            grid-column: 1 / 4;
+        }
+        .main-container-grid {
+            align-self: center;
+            justify-self: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class= "app-container-grid">
+        <header class="main-header">
+            <span>LOGO</span>
+        </header>
+        <div class="main-container-grid">
+            middle
+            </div>
+            <footer class="main-footer">
+                footer text
+            </footer>
+            <div>last</div>
+        </div>
+    </body>
+</html>
